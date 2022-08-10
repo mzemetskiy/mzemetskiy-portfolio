@@ -17,7 +17,7 @@ const Menu = ({ setMenu }) => {
                         <h5 id={styles.aboutSubtitle}>Front-End Javascript Developer</h5>
                         <p className={styles.aboutText}>I am Matthew Zemetskiy, an American front-end developer.</p>
                         <p className={styles.aboutText}>I enjoy learning about and experimenting with UI and UX, optimizing webpages for SEO, and creating custom CSS layouts.</p>
-                        <p className={styles.aboutText}>When I'm not programming, I play chess and practice my typing skills.</p>
+                        <p className={styles.aboutText}>When I&apos;m not programming, I play chess and practice my typing skills.</p>
                         <div id={styles.skills}>
                             <Image title="Next.js" alt='Next.js' id={styles.nextjs} src="/skills/nextjs.svg" height={60} width={60} />
                             <Image title="React.js" alt='React.js' src="/skills/react.svg" height={60} width={60} />
