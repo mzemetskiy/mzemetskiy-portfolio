@@ -1,0 +1,255 @@
+#header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #72637d;
+    animation: skew 2s linear 0s 1 normal;
+}
+
+#headerText {
+    text-align: left;
+}
+
+#title {
+    font-weight: 500;
+    font-size: 7vmin;
+    background-color: #f0f0f0;
+}
+
+#subtitle {
+    font-weight: 300;
+    font-size: 4vmin;
+    background-color: #f0f0f0;
+}
+
+#about {
+    z-index: 2;
+    cursor: pointer;
+    height: 5vmin;
+    width: 17vmin;
+    font-weight: 100;
+    font-size: 3vmin;
+    color: #f0f0f0;
+    background-color: #287c6b;
+    border-radius: 5px;
+    margin-top: 2vmin;
+    box-shadow: #f0f0f0 3px 3px 0 -1px, #72637d 3px 3px 0 0;
+    animation: skew 2s linear 0s 1 normal;
+}
+
+#about:hover {
+    box-shadow: #f0f0f0 -3px -3px 0 -1px, #72637d -3px -3px 0 0;
+    transition: 1s;
+}
+
+#shapes {
+    position: relative;
+    filter: invert(63%) sepia(36%) saturate(2293%) hue-rotate(5deg) brightness(96%) contrast(101%);
+}
+
+.imgHolder {
+    position: relative;
+    height: 1vmin;
+    width: 1vmin;
+    filter: invert(62%) sepia(55%) saturate(279%) hue-rotate(118deg) brightness(91%) contrast(91%);
+}
+
+#menuContainer {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(114, 99, 125, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    position: relative;
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#closeContainer {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close {
+    position: relative;
+    filter: invert(16%) sepia(0%) saturate(71%) hue-rotate(192deg) brightness(97%) contrast(84%);
+}
+
+#aboutSection {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(114, 99, 125);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px 0 20px;
+}
+
+#contactSection {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+#aboutTitle {
+    font-size: 1.3rem;
+}
+
+#aboutSubtitle {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.aboutText {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+#skills {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#nextjs {
+    filter: invert(98%) sepia(9%) saturate(437%) hue-rotate(183deg) brightness(114%) contrast(100%);
+}
+
+.contactLinks {
+    margin-top: 20px;
+}
+
+#work {
+    width: 100%;
+    padding: 10vh 10vh 10vh 10vh;
+}
+
+#workTitle {
+    text-align: center;
+    color: #72637d;
+    font-size: 5vmin;
+    font-weight: 300;
+}
+
+#workFlex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.case {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vmin 0 5vmin 0;
+}
+
+.caseContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #72637d;
+}
+
+.caseTitle {
+    font-weight: 500;
+    font-size: 4vmin;
+    cursor: pointer;
+    color: #5faf9f;
+    text-decoration: underline;
+}
+
+.caseSubtitle {
+    font-weight: 300;
+    font-size: 3vmin;
+}
+
+.caseText {
+    font-weight: 300;
+    font-size: 2vmin;
+}
+
+.workImage {
+    position: relative;
+    height: 40vmin;
+    width: 71.1vmin;
+    margin-left: 2vmin;
+}
+
+@keyframes skew {
+    from {transform: skewY(5deg); transform: skewX(5deg)}
+    to {transform: skewY(0deg);  transform: skewX(0deg)}
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        animation: none;
+    }
+    #title {
+        font-size: 10vw;
+    }
+    #subtitle {
+        font-size: 8vw;
+    }
+    #about {
+        height: 10vw;
+        width: 30vw;
+        font-size: 6vw;
+        animation: none;
+    }
+    #work {
+        padding: 20vmin 2vmin 2vmin 2vmin;
+    }
+    .workImage {
+        margin: 4vmin 0 2vmin 0;
+        height: 50vmin;
+        width: 90vmin;
+    }
+    #workTitle {
+        font-size: 12vmin;
+        font-weight: 500;
+    }
+    .case {
+        flex-direction: column-reverse;
+    }
+    .caseTitle {
+        font-size: 8vmin;
+    }
+    .caseSubtitle {
+        margin-top: 2vmin;
+        font-size: 6vmin;
+    }
+    .caseText {
+        font-size: 4vmin;
+    }
+}
