@@ -16,7 +16,7 @@ const Navbar = () => {
                 <button id={styles.logo} className={styles.button}><Link href="/"><a>M</a></Link></button>
                 <button onClick={() => setMenu(true)} className={styles.button}>About</button>
                 <button onClick={scrollToWork} className={styles.button}>Work</button>
-                <button className={styles.button}>Résumé</button>
+                <button className={styles.button}><Link href="https://drive.google.com/file/d/1ZlMBfpUUGpXRh_NWBOyc8fLxXcUh9tbm/view?usp=sharing"><a>Résumé</a></Link></button>
             </nav>
         </>
     );
