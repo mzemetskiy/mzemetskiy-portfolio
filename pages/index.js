@@ -32,6 +32,7 @@ export default function Home() {
     <>
       <Head>
         <title>Matthew Zemetskiy</title>
+        <meta name="description" content="Information for Matthew Zemetskiy, a front-end developer." />
       </Head>
       <header id={styles.header}>
         <div id={styles.headerText}>
